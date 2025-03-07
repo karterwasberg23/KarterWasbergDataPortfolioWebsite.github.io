@@ -1,0 +1,33 @@
+.description-container {
+    float: left;
+    height: 75%;
+    width: 100%;
+    background-color: coral;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 11px 0 rgba(180, 14, 180, 0.8),
+    0 10px 11px 0 rgba(180, 14, 180, 0.8), 0 10px 11px 0 rgba(180, 14, 180, 0.8);
+
+    border-radius: 30px;
+    text-align: center;
+    padding: 8% 10% 8% 10%;
+}
+
+
+.posts {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-align-items: -moz-stretch;
+    -webkit-align-items: -webkit-stretch;
+    -ms-align-items: -ms-stretch;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
