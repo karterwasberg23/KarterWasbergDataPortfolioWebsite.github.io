@@ -11,34 +11,114 @@
 */
 
 /*karter's css styles imported */
-.skills-used {
+
+#skills-section {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+#skills-section .skill-item {
+	display: flex;
+	/* Use flexbox to align title and list */
+	margin-bottom: 15px;
+	/* Space between each skill group */
+	align-items: baseline;
+	/* Align title and list to the same baseline */
+}
+
+#skills-section .skill-list {
 	display: inline-block;
+	vertical-align: top;
+	/* Align the list with the title */
+}
+
+
+
+
+.skills-used {
+
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-.sql-skill {
+.sql-skill-title {
 	float: left;
+	font-weight: bold;
+	width: 150px;
+	background-color: #2a0000;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.python-skill-title {
+	float: left;
+	font-weight: bold;
+	width: 150px;
+	background-color: #96a704;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.tableau-skill-title {
+	float: left;
+	font-weight: bold;
+	width: 150px;
+	background-color: #051650;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.excel-skill-title {
+	float: left;
+	font-weight: bold;
+	width: 150px;
+	background-color: #0d7530;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.sql-skill {
+	margin-right: 20px;
 	background-color: #2a0000;
 	padding: 5px 25px 5px 25px;
 	border-radius: 5px;
 	margin-right: 5px;
+	display: inline-block;
+	font-weight: bold;
 }
 
 .python-skill {
-	float: left;
-	background-color: #102820;
+	margin-right: 20px;
+	background-color: #96a704;
 	padding: 5px 25px 5px 25px;
 	border-radius: 5px;
 	margin-right: 5px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.excel-skill {
+	margin-right: 20px;
+	background-color: #0d7530;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	font-weight: bold;
 }
 
 .tableau-skill {
-	float: left;
+	margin-right: 20px;
 	background-color: #051650;
 	padding: 5px 25px 5px 25px;
 	border-radius: 5px;
 	margin-right: 5px;
+	display: inline-block;
+	font-weight: bold;
 }
 
 .sqlimage {
@@ -131,7 +211,8 @@
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	background-color: #3b3b3b;
+	width: 1500px;
+	
 }
 
 .description-container-table-img {
@@ -142,7 +223,7 @@
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-	background-color: #3b3b3b;
+	
 	width: 1500px;
 
 }
