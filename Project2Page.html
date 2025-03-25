@@ -70,8 +70,8 @@
 									href="https://github.com/karterwasberg23/portfolio-files/tree/main/SQL%20queries">SQL</a>
 							</div>
 							<div class="skill-list">
-								Clean data and perform complex joins in order to unify occ_codes to indentify similar
-								job titles
+								Cleaned data and perform complex joins in order to unify occ_codes to indentify similar
+								job titles.
 							</div>
 						</div>
 
@@ -80,7 +80,7 @@
 								<a href="https://github.com/karterwasberg23/portfolio-files/tree/main/Excel">Excel</a>
 							</div>
 							<div class="skill-list">
-								Appending data tables across multiple spreadsheats into one table using Power Queries
+								Appended data tables across multiple spreadsheats into one table using power queries.
 							</div>
 						</div>
 
@@ -89,7 +89,7 @@
 								<a href="https://public.tableau.com/app/profile/karter.wasberg/vizzes">Tableau</a>
 							</div>
 							<div class="skill-list">
-								Utilized to create dynamic dashboards for data visualization
+								Created dynamic dashboards for data visualization in order to compare housing prices and occupation salaries.
 							</div>
 						</div>
 
@@ -103,8 +103,6 @@
 
 
 				<!--<div class="image main"><img src="images/pic01.jpg" alt="" /></div>-->
-
-
 				<!--
 				<p class="description-container">project Environment</p>
 				<p class="description-container">scope & Project Steps</p>
@@ -115,14 +113,6 @@
 				<div class="description-container">Detailed Project Discussion</div>
 				<div class="description-container">Supporting Functions & Code</div>
 			-->
-
-
-
-
-
-
-
-
 
 				<button class="collapsible">Project Goal</button>
 
@@ -164,7 +154,7 @@
 					<ol>
 						<li>Converted each CSV file into a table format in Excel.</li>
 						<li>Removed the "United States" row to exclude extra aggregated data</li>
-						<li>Used Microsoft Power Query to unpivot columns, resulting in two columns: "Date of Price
+						<li>Used Microsoft Power Query to unpivot columns that had "price estimate date" as header to achieve two columns: "Date of Price
 							Estimate" and "Price Estimate."</li>
 						<li>Added a column specifying the number of bedrooms for each table.</li>
 						<li>Combined all tables into a single dataset using Power Query.</li>
@@ -177,7 +167,7 @@
 				<div class="description-container">
 					<ol>
 						<li>Removed extra comments from each Excel sheet for easier data processing</li>
-						<li>Added a "Year" column to each sheet for better organization.</li>
+						<li>Added a "Year" column to each sheet.</li>
 						<li>Appended data from 1997-2002 separately, as these years had different column headers
 							compared to 2003-2023.</li>
 						<li>Standardized column headers to ensure appending process would work properly.</li>
@@ -197,28 +187,27 @@
 					<p style="text-indent: 30px;">After appending the occupational wage data, some entries are missing
 						occ_code values.
 						Additionally, there are
-						multiple job titles with slight variations in naming conventions. To streamline the dataset and
-						enhance consistency,
-						I aim to categorize all job titles, enabling a simplified filtering process in Tableau.
+						multiple job titles with slightly different titles.
+						I wanted to categorize all job titles for data visualization in Tableau.
 						I collected the new job titles from
 						<a href="https://www.bls.gov/oes/current/oes_stru.htm" style="color:blue">BLS Occupational
-							Structure</a> to obtain standardized occ_codes. This will allows me to map similar job
+							Structure</a> to obtain standardized occ_codes. This will allowed me to map similar job
 						titles
 						to their corresponding codes,
-						ensuring accurate categorization and improving data visualization in Tableau.
+						ensuring accurate categorization for older job titles across the past 20 years.
 					</p>
 
 					<ol>
-						<li>Extract unique occ_titles from the cleaned dataset (<em>table: #distinctOcctitles</em>).
+						<li>Extracted unique occ_titles from the cleaned dataset (<em>table: #distinctOcctitles</em>).
 						</li>
-						<li>Extract unique occ_titles from the U.S. Bureau of Labor Statistics website (<em>table:
+						<li>Extracted unique occ_titles from the U.S. Bureau of Labor Statistics website (<em>table:
 								#leveled_occupations</em>).</li>
-						<li>Join both tables based on the number of matching words in job titles.</li>
-						<li>Filter out exact title matches and store them in a separate table (<em>table:
+						<li>Joined both tables based on the number of matching words in job titles.</li>
+						<li>Filtered out exact title matches and store them in a separate table (<em>table:
 								#perfect_match_occ_title_codes</em>).</li>
-						<li>Manually review and filter out mismatched results.</li>
-						<li>Assign occ_codes manually in Excel for remaining unmatched titles.</li>
-						<li>Use the newly assigned occ_codes to categorize job titles.</li>
+						<li>Manually reviewed and filtered out mismatched results.</li>
+						<li>Assigned occ_codes manually in Excel for remaining unmatched titles.</li>
+						<li>Used the newly assigned occ_codes to categorize job titles.</li>
 					</ol>
 				</div>
 
